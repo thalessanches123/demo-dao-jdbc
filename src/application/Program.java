@@ -49,6 +49,14 @@ public class Program {
 		sellerDao.update(seller);
 		System.out.println("updated completo");
 		
+		System.out.println("\n=== TEST6: seller delete ===");
+		System.out.println("coloque um id para deletar: ");
+		int id = sc.nextInt();
+		sellerDao.deleteById(id);
+		System.out.println("delete compelto");
+		
+		
+		sc.close();
 	}
 
 }
